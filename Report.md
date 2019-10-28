@@ -61,9 +61,11 @@ Detailed description of the DDPG can be found [here](https://arxiv.org/abs/1509.
     - Sigma = 0.1      
          
 ### Results:
-The training process was designed to proceed for 700 episodes, where it can stop if the environment was solved (reached an average score of 30 over the last 100 episodes) in less episodes. In this case, the environment was solved in 383 episodes. 
+The training process was designed to proceed for 700 episodes, where it can stop if the environment was solved (reached an average score of 30 over the last 100 episodes) in less episodes. In this case, the environment was solved in 383 episodes.   
+ 
   
 ![image1]
+
 ![image2]
 
 ### Future Ideas:
