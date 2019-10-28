@@ -36,7 +36,7 @@ Detailed description of the DDPG can be found [here](https://arxiv.org/abs/1509.
 
 - The learning step takes place every 20 iterations where the buffered states are sampled and used to train the networks for 10 times. 
    
-###A list if the hyperparameters used for training is provided below: 
+### A list if the hyperparameters used for training is provided below: 
    
 - The replay buffer size: BUFFER_SIZE = int(1e5)    
 - The minibatch size: BATCH_SIZE = 1024
