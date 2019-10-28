@@ -34,7 +34,7 @@ Detailed description of the DDPG can be found [here](https://arxiv.org/abs/1509.
 
 - Since the action space is continuous, exploring new actions occurs through adding Ornstein–Uhlenbeck Noise of parameters(mu = 0, theta = 0.15, sigma = 0.1) which decays overtime by 10-6 every time the learning step is performed.
 
-- The learning step takes place every 20 iterations where the buffered states are sampled and used to train the networks for 10 times. 
+- The learning step takes place every 20 iterations where the buffered experience tuples are sampled and used to train the networks for 10 times. 
    
 ### A list if the hyperparameters used for training is provided below: 
    
