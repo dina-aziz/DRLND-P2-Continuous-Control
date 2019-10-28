@@ -66,8 +66,6 @@ The training process was designed to proceed for 700 episodes, where it can stop
 ![image1]
 ![image2]
 
--- 
-
 ### Future Ideas:
 - **Exploring other training algorithms such as:**   
 1- Trust Region Policy Optimization (TRPO)  
