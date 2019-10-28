@@ -1,7 +1,6 @@
 [image1]: training.png "training"
 [image2]: average_scores_plot.png "plot"
-# Project 2: Continuous Control
---    
+# Project 2: Continuous Control  
     
 ## **Introduction**
 
@@ -17,8 +16,6 @@ Each action is a vector with four numbers, corresponding to torque applicable to
  A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.    
 #### The environment solution:    
 In order to solve the environment,  your agent must get an average score of +30 over 100 consecutive episodes.
-
--- 
 
 ## **The Learning Algorithm**
 
@@ -39,8 +36,6 @@ Detailed description of the DDPG can be found [here](https://arxiv.org/abs/1509.
 
 - The learning step takes place every 20 iterations where the buffered states are sampled and used to train the networks for 10 times. 
    
-
-
 ###A list if the hyperparameters used for training is provided below: 
    
 - The replay buffer size: BUFFER_SIZE = int(1e5)    
@@ -64,8 +59,7 @@ Detailed description of the DDPG can be found [here](https://arxiv.org/abs/1509.
     - Mu = 0
     - Theta = 0.15
     - Sigma = 0.1      
-      
--- 
+         
 ### Results:
 The training process was designed to proceed for 700 episodes, where it can stop if the environment was solved (reached an average score of 30 over the last 100 episodes) in less episodes. In this case, the environment was solved in 383 episodes. 
   
