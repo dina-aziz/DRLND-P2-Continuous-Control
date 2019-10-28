@@ -1,4 +1,4 @@
-[image1]: training.png "training"
+[image1]: training.PNG "training"
 [image2]: average_scores_plot.png "plot"
 # Project 2: Continuous Control  
     
