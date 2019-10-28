@@ -16,11 +16,10 @@ TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 5e-4         # learning rate of the actor 
 LR_CRITIC = 5e-4        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
-
-epsilon = 1;
-EPSILON_DECAY = 1e-6
-LEARN_EVERY = 20       
-LEARN_NUM = 10
+EPSILON = 1             # noise level for the purpose of exploration
+EPSILON_DECAY = 1e-6    # noise level decay
+LEARN_EVERY = 20        # network update interval    
+LEARN_NUM = 10          # number of network updates
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -39,7 +38,7 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(random_seed)
-        self.epsilon = epsilon
+        self.epsilon = EPSILON
 
         # Actor Network (w/ Target Network)
         self.actor_local = Actor(state_size, action_size, random_seed).to(device)
